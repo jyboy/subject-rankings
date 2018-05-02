@@ -1,0 +1,25 @@
+<wxs src="../../utils/util.wxs" module="util" />
+<view class="container">
+    <view class="background {{background_plus}}">
+        <view class="title">高校学科排行榜</view>
+        <view class="subtitle">{{university}}</view>
+        <block wx:if="{{remarkIf}}">
+            <view class="remark">由于<text class="link" catchtap="previewWiki">陶崇园事件</text>，</view>
+            <view class="warning">请慎重报考！</view>
+        </block>
+        <image class="honor" src="../../images/icon_honor.png"></image>
+    </view>
+    <scroll-view class="subject-list" scroll-y="true">
+        <view class="subject-item subject-title">
+            <view class="subject-name">一级学科</view>
+            <view class="subject-result">评估结果</view>
+        </view>
+        <view wx:for="{{subjects}}" class="subject-item">
+            <view class="subject-name">{{item.subject}}</view>
+            <view class="subject-result">{{util.getResult(item.resultNum)}}</view>
+        </view>
+    </scroll-view>
+    <view class="button-wrapper">
+        <button class="button" open-type="share">转发给好友</button>
+    </view>
+</view>

@@ -1,0 +1,133 @@
+.selector {
+    display: flex;
+
+    position: fixed;
+    top: 0;
+
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    width: 100%;
+    height: 70rpx;
+
+    background-color: #f5f5f5;
+}
+.picker {
+    position: relative;
+
+    width: 50%;
+}
+.picker {
+    border-left: 1px solid #e7e7e7;
+}
+.picker::after {
+    display: inline-block;
+
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 10px;
+
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: #c8c8cd;
+    width: 6px;
+    height: 6px;
+
+    transform: matrix(.71, .71, .71, -.71, 0, 0);
+
+    content: "";
+}
+.picker-wrapper {
+    display: flex;
+
+    width: 100%;
+    height: calc(70rpx - 1px);
+
+    align-items: center;
+    justify-content: center;
+}
+.university-list {
+    padding-top: 70rpx;
+    padding-bottom: calc(40px + 20rpx);
+    height: calc(100% - 90rpx - 40px);
+}
+.university-item {
+    display: flex;
+
+    margin: 0 20rpx;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d9d9d9;
+    width: calc(100% - 40rpx);
+    height: 140rpx;
+
+    color: #333;
+    background-color: #fff;
+}
+.university-left {
+    display: flex;
+
+    width: 140rpx;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+.university-logo {
+    border-radius: 5px;
+    height: 100rpx;
+}
+.university-right {
+    padding: 30rpx 0;
+    width: calc(100% - 140rpx);
+    height: 100%;
+}
+.university-right-wrapper {
+    display: flex;
+
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+.university-name {
+    font-size: 30rpx;
+    font-weight: bold;
+
+    color: #000;
+}
+.university-description {
+    font-size: 26rpx;
+
+    color: #666;
+}
+.university-result {
+    display: flex;
+
+    position: absolute;
+    top: 0;
+    right: 20rpx;
+
+    border: 1px solid #4facf7;
+    border-radius: 3px;
+    width: 80rpx;
+    height: 40rpx;
+
+    color: #4facf7;
+
+    align-items: center;
+    justify-content: center;
+}
+.source {
+    display: flex;
+
+    height: 80rpx;
+
+    font-size: 26rpx;
+
+    color: #999;
+
+    align-items: center;
+    justify-content: center;
+}
