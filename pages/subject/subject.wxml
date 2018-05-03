@@ -3,9 +3,8 @@
     <view class="background {{background_plus}}">
         <view class="title">高校学科排行榜</view>
         <view class="subtitle">{{university}}</view>
-        <block wx:if="{{remarkIf}}">
-            <view class="remark">由于<text class="link" catchtap="previewWiki">陶崇园事件</text>，</view>
-            <view class="warning">请慎重报考！</view>
+        <block wx:for="{{remark}}">
+            <view class="remark remark-{{index}}">了解<text class="link" id="{{item.link}}" catchtap="previewWiki">{{item.incident}}</text></view>
         </block>
         <image class="honor" src="../../images/icon_honor.png"></image>
     </view>

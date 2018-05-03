@@ -24,14 +24,12 @@
 .title,
 .subtitle,
 .remark,
-.warning,
 .honor {
     position: absolute;
 }
 .title,
 .subtitle,
-.remark,
-.warning {
+.remark {
     left: 80rpx;
 
     color: #fff;
@@ -47,17 +45,14 @@
 
     font-size: 36rpx;
 }
-.remark,
-.warning {
+.remark {
     font-size: 30rpx;
 }
-.remark {
+.remark-0 {
     top: 236rpx;
 }
-.warning {
+.remark-1 {
     top: 276rpx;
-
-    color: yellow;
 }
 .link {
     font-weight: 700;

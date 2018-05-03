@@ -1,5 +1,6 @@
 const app = getApp();
 const config = require('../../utils/config');
+const base64 = require('../../utils/base64.min');
 
 Page({
     data: {
@@ -7,7 +8,7 @@ Page({
         university: '北京大学',
         subjects: [],
         background_plus: app.isPlus ? 'background-plus' : '',
-        remarkIf: false
+        remark: []
     },
     onLoad: function (opts) {
         this.setData({
@@ -17,10 +18,16 @@ Page({
         wx.setNavigationBarTitle({
             title: `${this.data.university}学科排名`
         });
-        if (this.data.universityNum === 10497) {
-            this.setData({
-                remarkIf: true
-            });
+        for (let item of app.remarks) {
+            if (item.university === this.data.university) {
+                this.setData({
+                    remark: item.remark.map(val => {
+                        val.incident = base64.decode(val.incident);
+                        return val;
+                    })
+                });
+                break;
+            }
         }
         this.requestSubjects();
     },
@@ -36,9 +43,9 @@ Page({
             }
         });
     },
-    previewWiki: () => {
+    previewWiki: function (e) {
         wx.previewImage({
-            urls: ['http://p1xf71d56.bkt.clouddn.com/images/wiki_taochongyuan.png']
+            urls: [config.getWikiUrl(e.currentTarget.id)]
         });
     },
     onShareAppMessage: function () {
