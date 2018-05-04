@@ -22,8 +22,9 @@ Page({
             if (item.university === this.data.university) {
                 this.setData({
                     remark: item.remark.map(val => {
-                        val.incident = base64.decode(val.incident);
-                        return val;
+                        let rVal = {...val};
+                        rVal.incident = base64.decode(rVal.incident);
+                        return rVal;
                     })
                 });
                 break;
