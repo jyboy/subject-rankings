@@ -3,7 +3,7 @@
     <view class="background {{background_plus}}">
         <view class="title">高校学科排行榜</view>
         <view class="subtitle">{{university}}</view>
-        <block wx:for="{{remark}}">
+        <block wx:for="{{remark}}" wx:key="{{incident}}">
             <view class="remark remark-{{index}}">了解<text class="link" id="{{item.link}}" catchtap="previewWiki">{{item.incident}}</text></view>
         </block>
         <image class="honor" src="../../images/icon_honor.png"></image>
@@ -13,7 +13,7 @@
             <view class="subject-name">一级学科</view>
             <view class="subject-result">评估结果</view>
         </view>
-        <view wx:for="{{subjects}}" class="subject-item">
+        <view wx:for="{{subjects}}" wx:key="{{subject}}" class="subject-item">
             <view class="subject-name">{{item.subject}}</view>
             <view class="subject-result">{{util.getResult(item.resultNum)}}</view>
         </view>

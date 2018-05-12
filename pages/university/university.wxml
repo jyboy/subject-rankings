@@ -9,7 +9,7 @@
         </picker>
     </view>
     <scroll-view class="university-list" scroll-y="true">
-        <view wx:for="{{universities}}" class="university-item" id="{{item.universityNum}}_{{item.university}}" catchtap="navigateSubject">
+        <view wx:for="{{universities}}" wx:key="{{universityNum}}" class="university-item" id="{{item.universityNum}}_{{item.university}}" catchtap="navigateSubject">
             <view class="university-left">
                 <image class="university-logo" src="{{item.universityLogo}}" mode="aspectFit"></image>
             </view>
