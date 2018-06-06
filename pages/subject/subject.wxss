@@ -52,7 +52,7 @@
     top: 236rpx;
 }
 .remark-1 {
-    top: 276rpx;
+    top: 280rpx;
 }
 .link {
     font-weight: 700;
@@ -97,5 +97,5 @@
 }
 .subject-result {
     border-left: 1px solid #d9d9d9;
-    width: 31.2%;
+    width: 38.2%;
 }
