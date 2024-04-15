@@ -1,0 +1,104 @@
+@import '../../styles/variables.scss';
+
+.background {
+  position: relative;
+  background-color: $theme-blue;
+  height: 375px;
+}
+
+.background::after {
+  position: absolute;
+  bottom: -149px;
+  left: 0;
+  border-top: 150px solid $theme-blue;
+  border-right: calc($max-width / 2) solid transparent;
+  border-left: calc($max-width / 2) solid transparent;
+  width: 0;
+  height: 0;
+  content: '';
+}
+
+.title,
+.subtitle,
+.honor {
+  position: absolute;
+}
+
+.title,
+.subtitle {
+  left: 80px;
+  color: white;
+  font-family: $font-serif;
+}
+
+.title {
+  top: 100px;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.subtitle {
+  top: 180px;
+  font-size: 36px;
+}
+.link {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.honor {
+  top: 80px;
+  right: 80px;
+  width: 160px;
+  height: 200px;
+}
+
+.subject-list {
+  position: absolute;
+  top: 340px;
+  left: 80px;
+  border: 2px solid $theme-blue;
+  background-color: white;
+  width: calc(100% - 160px);
+  height: calc(100% - 420px);
+}
+
+.subject-item {
+  display: flex;
+  border-bottom: 1px solid $border-gray;
+  height: 1.5rem;
+}
+
+.subject-title {
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.subject-name {
+  width: 62%;
+  height: 100%;
+  text-align: center;
+  button {
+    background-color: transparent;
+    height: 100%;
+    font-size: 0.625rem;
+    text-decoration: underline 1px dashed gray;
+    text-underline-offset: 4px;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.subject-result {
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid $border-gray;
+  width: 38%;
+}
+
+.subject-grade {
+  display: inline-block;
+  min-width: 1.2rem;
+  line-height: 60px;
+}

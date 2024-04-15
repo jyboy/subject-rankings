@@ -1,0 +1,58 @@
+{
+  "grades": {
+    "A+": {
+      "en": "Top 2(%)",
+      "zh": "前2%或前2名"
+    },
+    "A": {
+      "en": "2%~5%",
+      "zh": "2%～5%"
+    },
+    "A-": {
+      "en": "5%~10%",
+      "zh": "5%～10%"
+    },
+    "B+": {
+      "en": "10%~20%",
+      "zh": "10%～20%"
+    },
+    "B": {
+      "en": "20%~30%",
+      "zh": "20%～30%"
+    },
+    "B-": {
+      "en": "30%~40%",
+      "zh": "30%～40%"
+    },
+    "C+": {
+      "en": "40%~50%",
+      "zh": "40%～50%"
+    },
+    "C": {
+      "en": "50%~60%",
+      "zh": "50%～60%"
+    },
+    "C-": {
+      "en": "60%~70%",
+      "zh": "60%～70%"
+    }
+  },
+  "text": {
+    "credit": {
+      "en": "Based on the official evaluation of the Ministry of Education.",
+      "zh": "数据来源：全国第四轮学科评估结果"
+    },
+    "subjectRankings": {
+      "en": "Subject Rankings",
+      "zh": "高校学科排行榜"
+    },
+    "subjectName": {
+      "en": "Subject",
+      "zh": "学科名称"
+    },
+    "subjectResult": {
+      "en": "Grade",
+      "zh": "评估结果"
+    }
+  }
+}

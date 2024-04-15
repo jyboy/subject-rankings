@@ -1,0 +1,41 @@
+@import '~taro-ui/dist/style/components/fab.scss';
+@import './styles/variables.scss';
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+view {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f1f4;
+  font-family: $font-sans;
+}
+
+#app {
+  max-width: $max-width;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  font-size: 0.75rem;
+}
+
+.fab {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+@media (min-width: $max-width) {
+  .weui-picker {
+    left: calc((100vw - $max-width) / 2);
+    max-width: $max-width;
+  }
+}

@@ -1,0 +1,20 @@
+# Dependencies
+node_modules
+
+# Build and test
+build
+dist
+coverage
+
+# Cloudflare
+.wrangler
+
+# Log files
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Misc
+*.local
+.DS_Store

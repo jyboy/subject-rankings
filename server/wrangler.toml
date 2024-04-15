@@ -1,0 +1,16 @@
+name = "subject-rankings"
+compatibility_date = "2024-03-01"
+compatibility_flags = ["nodejs_compat"]
+main = "./src/index.ts"
+
+[dev]
+ip = "127.0.0.1"
+port = 8787
+
+[[d1_databases]]
+binding = "DB"
+database_name = "subject-rankings"
+database_id = "22a06ecc-29d2-452e-a9b0-81cdddaed470"
+
+[vars]
+DB_ID = "22a06ecc-29d2-452e-a9b0-81cdddaed470"
