@@ -11,9 +11,9 @@ export const resultsToSubjects = (results: SubjectRow[]): Subject[] => {
     code: s.subject_code,
     name: {
       zh: s.subject_name_zh,
-      en: s.subject_name_en,
+      en: s.subject_name_en
     },
-    ranking: s.ranking,
+    ranking: s.ranking
   }))
 }
 

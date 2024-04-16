@@ -18,7 +18,7 @@ it('should respond with university list for /universities with a valid subject_c
     code: '10001',
     name: { zh: '北京大学', en: 'Peking University' },
     logo: '52ac2e9a747aec013fcf5190',
-    ranking: 1,
+    ranking: 1
   })
 })
 

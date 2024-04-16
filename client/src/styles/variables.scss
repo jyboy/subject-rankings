@@ -1,6 +1,25 @@
-$theme-blue: #5384e0 !default;
-$border-gray: #d9d9d9 !default;
+@font-face {
+  font-family: 'Markazi Text';
+  src: url('../assets/fonts/markazi-text.woff2') format('woff2'),
+       url('../assets/fonts/markazi-text.woff') format('woff');
+}
+
+$font-sans: 'Helvetica Neue', Roboto, 'Microsoft YaHei', sans-serif !default;
+$font-serif: 'Markazi Text', 'Songti SC', '宋体', ui-serif, serif !default;
+
 $max-width: 480pX !default;
-$selector-height: 1.75rem !default;
-$font-sans: 'Helvetica Neue', Roboto, Arial, sans-serif !default;
-$font-serif: Georgia, 'Times New Roman', serif !default;
+$app-width: min($max-width, 100vw) !default;
+$qr-size: 128pX !default;
+$picker-text: 14pX !default;
+
+$theme-blue: #5384e0 !default;
+$light-blue: #a4c4f0 !default;
+$body-gray: #f0f1f4 !default;
+$bg-gray: #f6f7f9 !default;
+$border-gray: #d9d9d9 !default;
+
+$box-shadow:
+  0 10px 15px -3px rgb(0 0 0 / 0.1),
+  0 4px 6px -4px rgb(0 0 0 / 0.1),
+  10px 0 15px -3px rgb(0 0 0 / 0.1),
+  0 -4px 6px -4px rgb(0 0 0 / 0.1) !default;

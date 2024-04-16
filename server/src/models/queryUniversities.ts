@@ -13,10 +13,10 @@ export const resultsToUniversities = (
     code: u.university_code,
     name: {
       zh: u.university_name_zh,
-      en: u.university_name_en,
+      en: u.university_name_en
     },
     logo: u.university_logo,
-    ranking: u.ranking,
+    ranking: u.ranking
   }))
 }
 

@@ -1,4 +1,5 @@
-const HOST_URL = 'https://subject-rankings.jyboy.workers.dev';
+const API_URL = 'https://subject-rankings.jyboy.workers.dev';
+const WEB_URL = 'https://subject-rankings.pages.dev/#';
 const OSS_URL = 'https://storage-oss.ipin.com/school-icon';
 const CDN_URL = 'https://cdn.atsjtu.cc/subject-ranking';
 
@@ -12,11 +13,11 @@ const CDN_URL = 'https://cdn.atsjtu.cc/subject-ranking';
  */
 export const buildRequestUrl = (code, type) => {
   if (type === 'university') {
-    return `${HOST_URL}/universities?subject_code=${code}`;
+    return `${API_URL}/universities?subject_code=${code}`;
   } else if (type === 'subject') {
-    return `${HOST_URL}/subjects?university_code=${code}`;
+    return `${API_URL}/subjects?university_code=${code}`;
   }
-  return HOST_URL;
+  return API_URL;
 };
 
 /**
@@ -49,3 +50,7 @@ export const isCodeValid = (code, type) => {
   }
   return false;
 };
+
+// TODO: JSDoc
+export const buildPageURL = (subject_code) =>
+  `${WEB_URL}/university?subject_code=${subject_code}`;

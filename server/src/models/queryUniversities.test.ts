@@ -10,6 +10,6 @@ it('should list universities by the same subject', async () => {
     code: '10001',
     name: { zh: '北京大学', en: 'Peking University' },
     logo: '52ac2e9a747aec013fcf5190',
-    ranking: 1,
+    ranking: 1
   })
 })

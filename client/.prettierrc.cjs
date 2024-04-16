@@ -10,6 +10,7 @@ module.exports = {
     '^react-redux$',
     '^@tarojs/(.*)$',
     '^taro-ui$',
+    '<THIRD_PARTY_MODULES>',
     '^[./]'
   ],
   plugins: [

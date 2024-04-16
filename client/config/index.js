@@ -45,12 +45,12 @@ export default defineConfig(async (merge, { command, mode }) => {
       publicPath: '/',
       staticDirectory: 'static',
       output: {
-        filename: 'js/[name].[hash:8].js',
+        filename: 'js/[name].[fullhash:8].js',
         chunkFilename: 'js/[name].[chunkhash:8].js'
       },
       miniCssExtractPluginOption: {
         ignoreOrder: true,
-        filename: 'css/[name].[hash].css',
+        filename: 'css/[name].[fullhash].css',
         chunkFilename: 'css/[name].[chunkhash].css'
       },
       postcss: {
@@ -62,7 +62,7 @@ export default defineConfig(async (merge, { command, mode }) => {
           enable: false,
           config: {
             namingPattern: 'module',
-            generateScopedName: '[name]__[local]___[hash:base64:5]'
+            generateScopedName: '[name]__[local]___[fullhash:base64:5]'
           }
         },
         pxtransform: {

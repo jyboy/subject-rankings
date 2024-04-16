@@ -14,7 +14,7 @@ app.use(
     origin: ['http://127.0.0.1:10086', 'https://subject-rankings.pages.dev'],
     allowMethods: ['GET', 'HEAD'],
     credentials: false,
-    maxAge: 432000,
+    maxAge: 432000
   })
 )
 

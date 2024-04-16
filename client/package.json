@@ -1,15 +1,14 @@
 {
   "name": "client_subject-rankings",
   "description": "React client for Subject Rankings app",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "scripts": {
-    "build:h5": "taro build --type h5",
-    "dev:h5": "npm run build:h5 -- --watch",
+    "dev": "npm run build -- --watch",
+    "build": "taro build --type h5",
     "deploy": "wrangler pages deploy dist",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives",
     "format": "prettier --write \"{src,cypress}/**/*.{js,jsx,css,scss}\"",
-    "test": "cypress run",
-    "cypress:open": "cypress open"
+    "test": "cypress run"
   },
   "dependencies": {
     "@babel/runtime": "^7.24.4",

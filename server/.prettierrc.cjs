@@ -1,9 +1,15 @@
 module.exports = {
   useTabs: false,
   tabWidth: 2,
-  trailingComma: 'es5',
+  trailingComma: 'none',
   semi: false,
   singleQuote: true,
-  importOrder: ['^hono$', '^hono/(.*)$', '^[./]', '/\/src\/$'],
-  plugins: ['@trivago/prettier-plugin-sort-imports']
+  importOrder: [
+    '^hono$',
+    '^hono/(.*)$',
+    '<THIRD_PARTY_MODULES>',
+    '^[./]',
+    '//src/$',
+  ],
+  plugins: ['@trivago/prettier-plugin-sort-imports'],
 }

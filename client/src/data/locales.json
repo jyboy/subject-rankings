@@ -38,6 +38,10 @@
     }
   },
   "text": {
+    "universityRankings": {
+      "en": "Chinese University Rankings",
+      "zh": "中国大学排名"
+    },
     "credit": {
       "en": "Based on the official evaluation of the Ministry of Education.",
       "zh": "数据来源：全国第四轮学科评估结果"
@@ -53,6 +57,32 @@
     "subjectResult": {
       "en": "Grade",
       "zh": "评估结果"
+    }
+  },
+  "labels": {
+    "qrCode": {
+      "en": "show QR code",
+      "zh": "显示二维码"
+    },
+    "github": {
+      "en": "open GitHub",
+      "zh": "跳转 GitHub"
+    },
+    "language": {
+      "en": "switch language",
+      "zh": "切换中英文"
+    },
+    "back": {
+      "en": "go back",
+      "zh": "返回上一页"
+    },
+    "confirm": {
+      "en": "OK",
+      "zh": "确认"
+    },
+    "cancel": {
+      "en": "Cancel",
+      "zh": "取消"
     }
   }
 }

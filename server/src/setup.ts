@@ -5,12 +5,11 @@ import type {
   UniversityRow,
   Subject,
   SubjectRow,
-  D1Result,
+  D1Result
 } from './types'
 import { CF_API_URL } from './utils/constants'
 
 beforeEach(() => {
-  console.log(env)
   vi.mock('./models/queryUniversities.ts', async (importOriginal) => {
     const mod =
       await importOriginal<typeof import('./models/queryUniversities.ts')>()
@@ -27,12 +26,12 @@ beforeEach(() => {
               method: 'POST',
               headers: {
                 Authorization: 'Bearer ' + env.API_KEY,
-                'content-type': 'application/json',
+                'content-type': 'application/json'
               },
               body: JSON.stringify({
                 params: [subject_code],
-                sql: mod.querySQL,
-              }),
+                sql: mod.querySQL
+              })
             }
           )
 
@@ -45,7 +44,7 @@ beforeEach(() => {
           }
           return []
         }
-      ),
+      )
     }
   })
 
@@ -62,12 +61,12 @@ beforeEach(() => {
               method: 'POST',
               headers: {
                 Authorization: 'Bearer ' + env.API_KEY,
-                'content-type': 'application/json',
+                'content-type': 'application/json'
               },
               body: JSON.stringify({
                 params: [subject_code],
-                sql: mod.querySQL,
-              }),
+                sql: mod.querySQL
+              })
             }
           )
 
@@ -80,7 +79,7 @@ beforeEach(() => {
           }
           return []
         }
-      ),
+      )
     }
   })
 })

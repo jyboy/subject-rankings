@@ -1,8 +1,24 @@
+@import '~taro-ui/dist/style/components/modal.scss';
 @import '~taro-ui/dist/style/components/fab.scss';
 @import './styles/variables.scss';
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.weui-picker {
+  left: calc((100vw - $app-width) / 2);
+  width: $app-width;
+  font-size: $picker-text;
+}
+
+.at-modal__container {
+  width: calc($qr-size + 32px);
+  height: calc($qr-size + 32px);
+}
+
+.at-modal__content {
+  padding: 16px;
 }
 
 view {
@@ -13,7 +29,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f1f4;
+  background-color: $body-gray;
   font-family: $font-sans;
 }
 
@@ -31,11 +47,10 @@ body {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
-}
-
-@media (min-width: $max-width) {
-  .weui-picker {
-    left: calc((100vw - $max-width) / 2);
-    max-width: $max-width;
+  background-color: $light-blue;
+  width: 2.4rem;
+  height: 2.4rem;
+  &:hover {
+    cursor: pointer;
   }
 }

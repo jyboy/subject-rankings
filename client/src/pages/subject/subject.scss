@@ -4,60 +4,67 @@
   position: relative;
   background-color: $theme-blue;
   height: 375px;
+  &::after {
+    position: absolute;
+    bottom: -149px;
+    left: 0;
+    border-top: 150px solid $theme-blue;
+    border-right: calc($app-width / 2) solid transparent;
+    border-left: calc($app-width / 2) solid transparent;
+    width: 0;
+    height: 0;
+    content: '';
+  }
 }
 
-.background::after {
+.subject-title,
+.subject-subtitle,
+.honor-icon {
   position: absolute;
-  bottom: -149px;
-  left: 0;
-  border-top: 150px solid $theme-blue;
-  border-right: calc($max-width / 2) solid transparent;
-  border-left: calc($max-width / 2) solid transparent;
-  width: 0;
-  height: 0;
-  content: '';
 }
 
-.title,
-.subtitle,
-.honor {
-  position: absolute;
-}
-
-.title,
-.subtitle {
+.subject-title,
+.subject-subtitle {
   left: 80px;
   color: white;
   font-family: $font-serif;
 }
 
-.title {
-  top: 100px;
-  font-weight: 600;
-  font-size: 50px;
+.subject-title {
+  top: 80px;
+  &.en {
+    font-size: 64px;
+  }
+  &.zh {
+    font-weight: 700;
+    font-size: 56px;
+  }
 }
 
-.subtitle {
+.subject-subtitle {
   top: 180px;
-  font-size: 36px;
-}
-.link {
-  font-weight: 700;
-  text-decoration: underline;
+  max-width: calc(100% - 280px);
+  line-height: 1.1;
+  &.en {
+    font-size: 40px;
+  }
+  &.zh {
+    font-size: 36px;
+  }
 }
 
-.honor {
+.honor-icon {
   top: 80px;
   right: 80px;
-  width: 160px;
-  height: 200px;
+  width: 120px;
+  height: 140px;
 }
 
 .subject-list {
   position: absolute;
   top: 340px;
   left: 80px;
-  border: 2px solid $theme-blue;
+  border: 1px solid $theme-blue;
   background-color: white;
   width: calc(100% - 160px);
   height: calc(100% - 420px);
@@ -69,23 +76,28 @@
   height: 1.5rem;
 }
 
-.subject-title {
+.thead {
   font-weight: 700;
   line-height: 1.5rem;
 }
 
 .subject-name {
-  width: 62%;
+  width: 70%;
   height: 100%;
   text-align: center;
   button {
     background-color: transparent;
+    padding-right: 0;
+    padding-left: 0;
     height: 100%;
     font-size: 0.625rem;
-    text-decoration: underline 1px dashed gray;
+    text-decoration: underline 1px dashed #808080;
     text-underline-offset: 4px;
     &::after {
       display: none;
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
 }
@@ -94,7 +106,7 @@
   display: flex;
   justify-content: center;
   border-left: 1px solid $border-gray;
-  width: 38%;
+  width: 30%;
 }
 
 .subject-grade {

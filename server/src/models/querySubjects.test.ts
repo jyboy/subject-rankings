@@ -9,6 +9,6 @@ it('should list subjects of the same university', async () => {
   expect(subjects[0]).toStrictEqual({
     code: '0101',
     name: { zh: '哲学', en: 'Philosophy' },
-    ranking: 1,
+    ranking: 1
   })
 })

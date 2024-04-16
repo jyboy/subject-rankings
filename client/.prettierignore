@@ -1,4 +1,4 @@
 src/data/
 src/icons/
-src/styles/
+src/styles/variables.scss
 src/index.html

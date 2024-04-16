@@ -20,7 +20,7 @@ export interface D1Result<T extends Row> {
   result: [
     {
       results: T[]
-    },
+    }
   ]
   errors: []
   messages: []
