@@ -10,10 +10,10 @@ dependencies:
     version: 7.24.4
   '@reduxjs/toolkit':
     specifier: ^2.2.3
-    version: 2.2.3(react-redux@9.1.0)(react@18.2.0)
+    version: 2.2.3(react-redux@9.1.1)(react@18.2.0)
   '@tarojs/components':
     specifier: 3.6.26
-    version: 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
+    version: 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
   '@tarojs/helper':
     specifier: 3.6.26
     version: 3.6.26
@@ -22,10 +22,7 @@ dependencies:
     version: 3.6.26(@pmmmwh/react-refresh-webpack-plugin@0.5.11)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)(react-refresh@0.14.0)(react@18.2.0)
   '@tarojs/plugin-platform-h5':
     specifier: 3.6.26
-    version: 3.6.26(@tarojs/helper@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
-  '@tarojs/plugin-platform-weapp':
-    specifier: 3.6.26
-    version: 3.6.26(@tarojs/components@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)
+    version: 3.6.26(@tarojs/helper@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
   '@tarojs/react':
     specifier: 3.6.26
     version: 3.6.26(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(react@18.2.0)
@@ -37,7 +34,10 @@ dependencies:
     version: 3.6.26
   '@tarojs/taro':
     specifier: 3.6.26
-    version: 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)
+    version: 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
+  qrcode.react:
+    specifier: ^3.1.0
+    version: 3.1.0(react@18.2.0)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -45,8 +45,8 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   react-redux:
-    specifier: ^9.1.0
-    version: 9.1.0(@types/react@18.2.76)(react-native@0.73.6)(react@18.2.0)(redux@5.0.1)
+    specifier: ^9.1.1
+    version: 9.1.1(@types/react@18.2.79)(react-native@0.73.6)(react@18.2.0)(redux@5.0.1)
   taro-ui:
     specifier: ^3.3.0
     version: 3.3.0(@tarojs/components@3.6.26)(@tarojs/plugin-platform-alipay@3.6.26)(@tarojs/plugin-platform-h5@3.6.26)(@tarojs/plugin-platform-jd@3.6.26)(@tarojs/plugin-platform-qq@3.6.26)(@tarojs/plugin-platform-swan@3.6.26)(@tarojs/plugin-platform-tt@3.6.26)(@tarojs/plugin-platform-weapp@3.6.26)(@tarojs/react@3.6.26)(@tarojs/taro-rn@3.6.26)(@tarojs/taro@3.6.26)(react-dom@18.2.0)(react-native@0.73.6)(react@18.2.0)
@@ -63,13 +63,13 @@ devDependencies:
     version: 3.6.26(@tarojs/taro@3.6.26)
   '@tarojs/taro-loader':
     specifier: 3.6.26
-    version: 3.6.26(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)
+    version: 3.6.26(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
   '@tarojs/test-utils-react':
     specifier: ^0.1.1
     version: 0.1.1(@babel/core@7.24.4)(@tarojs/components@3.6.26)(@tarojs/helper@3.6.26)(@tarojs/plugin-framework-react@3.6.26)(@tarojs/plugin-platform-h5@3.6.26)(@tarojs/react@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(react-dom@18.2.0)(react@18.2.0)
   '@tarojs/webpack5-runner':
     specifier: 3.6.26
-    version: 3.6.26(@babel/core@7.24.4)(@swc/core@1.3.96)(@tarojs/components@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.4)(webpack@5.91.0)
+    version: 3.6.26(@babel/core@7.24.4)(@swc/core@1.3.96)(@tarojs/components@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.4)(webpack@5.91.0)
   '@trivago/prettier-plugin-sort-imports':
     specifier: ^4.3.0
     version: 4.3.0(prettier@3.2.5)
@@ -77,8 +77,8 @@ devDependencies:
     specifier: ^20.12.7
     version: 20.12.7
   '@types/react':
-    specifier: ^18.2.75
-    version: 18.2.76
+    specifier: ^18.2.79
+    version: 18.2.79
   '@types/webpack-env':
     specifier: ^1.18.4
     version: 1.18.4
@@ -86,8 +86,8 @@ devDependencies:
     specifier: 3.6.26
     version: 3.6.26(@babel/core@7.24.4)
   cypress:
-    specifier: ^13.7.2
-    version: 13.7.2
+    specifier: ^13.7.3
+    version: 13.7.3
   eslint:
     specifier: ^8.57.0
     version: 8.57.0
@@ -3351,7 +3351,7 @@ packages:
       warn-once: 0.1.1
     dev: false
 
-  /@reduxjs/toolkit@2.2.3(react-redux@9.1.0)(react@18.2.0):
+  /@reduxjs/toolkit@2.2.3(react-redux@9.1.1)(react@18.2.0):
     resolution: {integrity: sha512-76dll9EnJXg4EVcI5YNxZA/9hSAmZsFqzMmNRHvIlzw2WS/twfcVX3ysYrWGJMClwEmChQFC4yRq74tn6fdzRA==}
     peerDependencies:
       react: ^16.9.0 || ^17.0.0 || ^18
@@ -3364,7 +3364,7 @@ packages:
     dependencies:
       immer: 10.0.4
       react: 18.2.0
-      react-redux: 9.1.0(@types/react@18.2.76)(react-native@0.73.6)(react@18.2.0)(redux@5.0.1)
+      react-redux: 9.1.1(@types/react@18.2.79)(react-native@0.73.6)(react@18.2.0)(redux@5.0.1)
       redux: 5.0.1
       redux-thunk: 3.1.0(redux@5.0.1)
       reselect: 5.1.0
@@ -3636,7 +3636,7 @@ packages:
       - supports-color
     dev: true
 
-  /@tarojs/components-advanced@3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.76)(react@18.2.0):
+  /@tarojs/components-advanced@3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.79)(react@18.2.0):
     resolution: {integrity: sha512-8SiaYBb1GG88C+1OZZbgTeNO3NDiqwfyRle5oUyKNQ+MjnfrhAjQp65y59P3HVjaHTXnCLMmi/Vt9JXaDM1sSQ==}
     peerDependencies:
       '@tarojs/runtime': ~3.6.26
@@ -3650,10 +3650,10 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
+      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
       '@tarojs/runtime': 3.6.26(@tarojs/shared@3.6.26)
       '@tarojs/shared': 3.6.26
-      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)
+      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
       classnames: 2.5.1
       csstype: 3.1.3
       memoize-one: 6.0.0
@@ -3667,12 +3667,12 @@ packages:
       - '@types/webpack'
       - '@types/webpack-dev-server'
 
-  /@tarojs/components-react@3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38):
+  /@tarojs/components-react@3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38):
     resolution: {integrity: sha512-E2KIO7bR99pPlCi4bAV+314l8ajgfLcCSxIJALaL9I8qnJj1XbG2fVXqJ4bSVPd5/wUV8tMKYLEpJ5y2Ih/rkg==}
     dependencies:
       '@babel/runtime': 7.24.4
-      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
-      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)
+      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
+      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
       classnames: 2.5.1
       swiper: 6.8.0
       tslib: 2.6.2
@@ -3725,7 +3725,7 @@ packages:
       - supports-color
     dev: false
 
-  /@tarojs/components@3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0):
+  /@tarojs/components@3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0):
     resolution: {integrity: sha512-+xrcZlZwUg5FT4xu4EfdqWOJjSqeFuDqNdAu9CyTAn0nuH7GRZ4H0BoKaWT22oNWq0sTsepmhkzcduPXyYI2SA==}
     peerDependencies:
       '@types/react': '*'
@@ -3740,9 +3740,9 @@ packages:
         optional: true
     dependencies:
       '@stencil/core': 2.22.3
-      '@tarojs/components-advanced': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.76)(react@18.2.0)
-      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)
-      '@types/react': 18.2.76
+      '@tarojs/components-advanced': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.79)(react@18.2.0)
+      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
+      '@types/react': 18.2.79
       classnames: 2.5.1
       hls.js: 1.5.7
       resolve-pathname: 3.0.0
@@ -3953,7 +3953,7 @@ packages:
     peerDependencies:
       '@tarojs/components': ~3.6.26
     dependencies:
-      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
+      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
       '@tarojs/service': 3.6.26(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)
       '@tarojs/shared': 3.6.26
     transitivePeerDependencies:
@@ -3961,11 +3961,11 @@ packages:
       - '@tarojs/taro'
       - supports-color
 
-  /@tarojs/plugin-platform-h5@3.6.26(@tarojs/helper@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0):
+  /@tarojs/plugin-platform-h5@3.6.26(@tarojs/helper@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0):
     resolution: {integrity: sha512-THcX/J3GJcwXFwU1OklIa92EG3NVNyinC10VG1X5YcAhHtu/AQqBUMp7tq9hFvsMuhC1d7JyL+JYWZp0zY9iVQ==}
     dependencies:
-      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
-      '@tarojs/components-react': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)
+      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
+      '@tarojs/components-react': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
       '@tarojs/router': 3.6.26(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)
       '@tarojs/runtime': 3.6.26(@tarojs/shared@3.6.26)
       '@tarojs/service': 3.6.26(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)
@@ -4018,7 +4018,7 @@ packages:
       '@tarojs/components': ~3.6.26
       '@tarojs/shared': ~3.6.26
     dependencies:
-      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
+      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
       '@tarojs/service': 3.6.26(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)
       '@tarojs/shared': 3.6.26
     transitivePeerDependencies:
@@ -4032,7 +4032,7 @@ packages:
       '@tarojs/components': ~3.6.26
       '@tarojs/shared': ~3.6.26
     dependencies:
-      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
+      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
       '@tarojs/service': 3.6.26(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)
       '@tarojs/shared': 3.6.26
     transitivePeerDependencies:
@@ -4046,7 +4046,7 @@ packages:
       '@tarojs/components': ~3.6.26
       '@tarojs/shared': ~3.6.26
     dependencies:
-      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
+      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
       '@tarojs/service': 3.6.26(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)
       '@tarojs/shared': 3.6.26
     transitivePeerDependencies:
@@ -4099,7 +4099,7 @@ packages:
     dependencies:
       '@tarojs/runtime': 3.6.26(@tarojs/shared@3.6.26)
       '@tarojs/shared': 3.6.26
-      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)
+      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
       dingtalk-jsapi: 2.15.4
       history: 5.3.0
       mobile-detect: 1.4.5
@@ -4167,7 +4167,7 @@ packages:
     dependencies:
       '@tarojs/helper': 3.6.26
       '@tarojs/shared': 3.6.26
-      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)
+      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
       joi: 17.12.3
       lodash: 4.17.21
       ora: 5.4.1
@@ -4187,7 +4187,7 @@ packages:
       '@tarojs/components': ~3.6.26
     dependencies:
       '@tarojs/api': 3.6.26
-      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
+      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
       '@tarojs/router': 3.6.26(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)
       '@tarojs/runtime': 3.6.26(@tarojs/shared@3.6.26)
       '@tarojs/shared': 3.6.26
@@ -4204,11 +4204,11 @@ packages:
     transitivePeerDependencies:
       - '@tarojs/taro'
 
-  /@tarojs/taro-loader@3.6.26(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38):
+  /@tarojs/taro-loader@3.6.26(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38):
     resolution: {integrity: sha512-ljDkUx3axb/xBwTL67jWdFJRG8hFnnPkrsyTPVeY6eha9owK1xX7uR66A6ni6gUBVUvcp23cB/8j1fmWCqDxEQ==}
     dependencies:
       '@tarojs/helper': 3.6.26
-      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)
+      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
       loader-utils: 1.4.2
     transitivePeerDependencies:
       - '@swc/helpers'
@@ -4291,7 +4291,7 @@ packages:
       - supports-color
     dev: false
 
-  /@tarojs/taro@3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38):
+  /@tarojs/taro@3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38):
     resolution: {integrity: sha512-F/8HMQesVY7meEttaGkpyv3OdU8dU1N6zD5+FNwsOeJtuy1nWijgRuXgEjMAVW9sTgRAQcHTjO1Xm3N176HSTg==}
     peerDependencies:
       '@tarojs/helper': ~3.6.26
@@ -4316,7 +4316,7 @@ packages:
       '@tarojs/api': 3.6.26
       '@tarojs/helper': 3.6.26
       '@tarojs/runtime': 3.6.26(@tarojs/shared@3.6.26)
-      '@types/react': 18.2.76
+      '@types/react': 18.2.79
       postcss: 8.4.38
 
   /@tarojs/test-utils-dom@0.1.1(@babel/core@7.24.4):
@@ -4344,10 +4344,10 @@ packages:
       react-dom: ^18.0.0
     dependencies:
       '@babel/runtime': 7.24.4
-      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
+      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
       '@tarojs/helper': 3.6.26
       '@tarojs/plugin-framework-react': 3.6.26(@pmmmwh/react-refresh-webpack-plugin@0.5.11)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)(react-refresh@0.14.0)(react@18.2.0)
-      '@tarojs/plugin-platform-h5': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
+      '@tarojs/plugin-platform-h5': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
       '@tarojs/react': 3.6.26(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(react@18.2.0)
       '@tarojs/runtime': 3.6.26(@tarojs/shared@3.6.26)
       '@tarojs/shared': 3.6.26
@@ -4373,14 +4373,14 @@ packages:
       - supports-color
     dev: true
 
-  /@tarojs/webpack5-prebundle@3.6.26(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(webpack@5.91.0):
+  /@tarojs/webpack5-prebundle@3.6.26(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(webpack@5.91.0):
     resolution: {integrity: sha512-IVR8G/2YEYBiDduOMqJfslCagYGbHgfesLLAlzkL4oHajRv3+1ay94vOlleP61X74ZXsH6dMeymgG6IXmzOnEQ==}
     peerDependencies:
       webpack: ^5.78.0
     dependencies:
       '@tarojs/helper': 3.6.26
       '@tarojs/shared': 3.6.26
-      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)
+      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
       enhanced-resolve: 5.16.0
       es-module-lexer: 0.10.5
       lodash: 4.17.21
@@ -4398,7 +4398,7 @@ packages:
       - vue
     dev: true
 
-  /@tarojs/webpack5-runner@3.6.26(@babel/core@7.24.4)(@swc/core@1.3.96)(@tarojs/components@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.4)(webpack@5.91.0):
+  /@tarojs/webpack5-runner@3.6.26(@babel/core@7.24.4)(@swc/core@1.3.96)(@tarojs/components@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.4)(webpack@5.91.0):
     resolution: {integrity: sha512-LXqCP8+nsbjQem7wddEtSuOfbq5OTmL8bOiTpqeWey/fIbKgk1Uq/tLC5VLoFSTcwZuCnAWK47GgMzCfsVHzww==}
     peerDependencies:
       '@tarojs/runtime': ~3.6.26
@@ -4418,9 +4418,9 @@ packages:
       '@tarojs/runner-utils': 3.6.26
       '@tarojs/runtime': 3.6.26(@tarojs/shared@3.6.26)
       '@tarojs/shared': 3.6.26
-      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)
-      '@tarojs/taro-loader': 3.6.26(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)
-      '@tarojs/webpack5-prebundle': 3.6.26(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(webpack@5.91.0)
+      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
+      '@tarojs/taro-loader': 3.6.26(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
+      '@tarojs/webpack5-prebundle': 3.6.26(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(webpack@5.91.0)
       acorn-walk: 8.3.2
       autoprefixer: 9.8.8
       babel-loader: 8.2.1(@babel/core@7.24.4)(webpack@5.91.0)
@@ -4821,8 +4821,8 @@ packages:
     resolution: {integrity: sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==}
     dev: true
 
-  /@types/react@18.2.76:
-    resolution: {integrity: sha512-T6z/v7YxpswDM61Vq5KoSPTJqCkroJfsDIsvXCr4+qOY6gik5Ju4w0jf67cpC5z7ydOnp/E0V0W08pDRy8u9Xw==}
+  /@types/react@18.2.79:
+    resolution: {integrity: sha512-RwGAGXPl9kSXwdNTafkOEuFrTBD5SA2B3iEB96xi8+xu5ddUa/cpvyVCSNn+asgLCTHkb5ZxN8gbuibYJi4s1w==}
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
@@ -5056,6 +5056,7 @@ packages:
       lru-cache: 4.1.5
       merge-source-map: 1.1.0
       postcss: 7.0.39
+      postcss-picker-wrapper-parser: 6.0.16
       postcss-selector-parser: 6.0.16
       source-map: 0.6.1
       vue-template-es2015-compiler: 1.9.1
@@ -7321,6 +7322,7 @@ packages:
       postcss-minify-font-values: 5.1.0(postcss@8.4.38)
       postcss-minify-gradients: 5.1.1(postcss@8.4.38)
       postcss-minify-params: 5.1.4(postcss@8.4.38)
+      postcss-minify-picker-wrappers: 5.2.1(postcss@8.4.38)
       postcss-minify-selectors: 5.2.1(postcss@8.4.38)
       postcss-normalize-charset: 5.1.0(postcss@8.4.38)
       postcss-normalize-display-values: 5.1.0(postcss@8.4.38)
@@ -7335,6 +7337,7 @@ packages:
       postcss-reduce-initial: 5.1.2(postcss@8.4.38)
       postcss-reduce-transforms: 5.1.0(postcss@8.4.38)
       postcss-svgo: 5.1.0(postcss@8.4.38)
+      postcss-unique-picker-wrappers: 5.1.1(postcss@8.4.38)
       postcss-unique-selectors: 5.1.1(postcss@8.4.38)
     dev: true
 
@@ -7394,8 +7397,8 @@ packages:
     resolution: {integrity: sha512-d4ZVpCW31eWwCMe1YT3ur7mUDnTXbgwyzaL320DrcRT45rfjYxkt5QWLrmOJ+/UEAI2+fQgKe/fCjR8l4TpRgw==}
     dev: true
 
-  /cypress@13.7.2:
-    resolution: {integrity: sha512-FF5hFI5wlRIHY8urLZjJjj/YvfCBrRpglbZCLr/cYcL9MdDe0+5usa8kTIrDHthlEc9lwihbkb5dmwqBDNS2yw==}
+  /cypress@13.7.3:
+    resolution: {integrity: sha512-uoecY6FTCAuIEqLUYkTrxamDBjMHTYak/1O7jtgwboHiTnS1NaMOoR08KcTrbRZFCBvYOiS4tEkQRmsV+xcrag==}
     engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
     hasBin: true
     requiresBuild: true
@@ -13521,6 +13524,7 @@ packages:
       postcss: ^8.2.2
     dependencies:
       postcss: 8.4.38
+      postcss-picker-wrapper-parser: 6.0.16
       postcss-selector-parser: 6.0.16
       postcss-value-parser: 4.2.0
     dev: true
@@ -13651,6 +13655,7 @@ packages:
       caniuse-api: 3.0.0
       cssnano-utils: 3.1.0(postcss@8.4.38)
       postcss: 8.4.38
+      postcss-picker-wrapper-parser: 6.0.16
       postcss-selector-parser: 6.0.16
     dev: true
 
@@ -13688,6 +13693,16 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
+  /postcss-minify-picker-wrappers@5.2.1(postcss@8.4.38):
+    resolution: {integrity: sha512-nPJu7OjZJTsVUmPdm2TcaiohIwxP+v8ha9NehQ2ye9szv4orirRU3SDdtUmKH+10nzn0bAyOXZ0UEr7OpvLehg==}
+    engines: {node: ^10 || ^12 || >=14.0}
+    peerDependencies:
+      postcss: ^8.2.15
+    dependencies:
+      postcss: 8.4.38
+      postcss-picker-wrapper-parser: 6.0.16
+    dev: true
+
   /postcss-minify-selectors@5.2.1(postcss@8.4.38):
     resolution: {integrity: sha512-nPJu7OjZJTsVUmPdm2TcaiohIwxP+v8ha9NehQ2ye9szv4orirRU3SDdtUmKH+10nzn0bAyOXZ0UEr7OpvLehg==}
     engines: {node: ^10 || ^12 || >=14.0}
@@ -13715,6 +13730,7 @@ packages:
     dependencies:
       icss-utils: 5.1.0(postcss@8.4.38)
       postcss: 8.4.38
+      postcss-picker-wrapper-parser: 6.0.16
       postcss-selector-parser: 6.0.16
       postcss-value-parser: 4.2.0
     dev: true
@@ -13726,6 +13742,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       postcss: 8.4.38
+      postcss-picker-wrapper-parser: 6.0.16
       postcss-selector-parser: 6.0.16
     dev: true
 
@@ -13841,6 +13858,14 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
+  /postcss-picker-wrapper-parser@6.0.16:
+    resolution: {integrity: sha512-A0RVJrX+IUkVZbW3ClroRWurercFhieevHB38sr2+l9eUClMqome3LmEmnhlNy+5Mr2EYN6B2Kaw9wYdd+VHiw==}
+    engines: {node: '>=4'}
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
+    dev: true
+
   /postcss-plugin-constparse@3.6.26(postcss@8.4.38):
     resolution: {integrity: sha512-tRLRG8SKtrB2QMFCnFZlRVInf2nTGskAkbUoOJKz9/8N5MnscPYfwscmQoMLk0uhBtBaClRSUfeMbca62n1NEA==}
     peerDependencies:
@@ -13904,6 +13929,16 @@ packages:
       postcss: 8.4.38
       postcss-value-parser: 4.2.0
       svgo: 2.8.0
+    dev: true
+
+  /postcss-unique-picker-wrappers@5.1.1(postcss@8.4.38):
+    resolution: {integrity: sha512-5JiODlELrz8L2HwxfPnhOWZYWDxVHWL83ufOv84NrcgipI7TaeRsatAhK4Tr2/ZiYldpK/wBvw5BD3qfaK96GA==}
+    engines: {node: ^10 || ^12 || >=14.0}
+    peerDependencies:
+      postcss: ^8.2.15
+    dependencies:
+      postcss: 8.4.38
+      postcss-picker-wrapper-parser: 6.0.16
     dev: true
 
   /postcss-unique-selectors@5.1.1(postcss@8.4.38):
@@ -14139,6 +14174,14 @@ packages:
   /qrcode-terminal@0.11.0:
     resolution: {integrity: sha512-Uu7ii+FQy4Qf82G4xu7ShHhjhGahEpCWc3x8UavY3CTcWV+ufmmCtwkr7ZKsX42jdL0kr1B5FKUeqJvAn51jzQ==}
     hasBin: true
+    dev: false
+
+  /qrcode.react@3.1.0(react@18.2.0):
+    resolution: {integrity: sha512-oyF+Urr3oAMUG/OiOuONL3HXM+53wvuH3mtIWQrYmsXoAq0DkvZp2RYUWFSMFtbdOpuS++9v+WAkzNVkMlNW6Q==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /qs@6.10.4:
@@ -14548,8 +14591,8 @@ packages:
       react: 18.2.0
       scheduler: 0.21.0
 
-  /react-redux@9.1.0(@types/react@18.2.76)(react-native@0.73.6)(react@18.2.0)(redux@5.0.1):
-    resolution: {integrity: sha512-6qoDzIO+gbrza8h3hjMA9aq4nwVFCKFtY2iLxCtVT38Swyy2C/dJCGBXHeHLtx6qlg/8qzc2MrhOeduf5K32wQ==}
+  /react-redux@9.1.1(@types/react@18.2.79)(react-native@0.73.6)(react@18.2.0)(redux@5.0.1):
+    resolution: {integrity: sha512-5ynfGDzxxsoV73+4czQM56qF43vsmgJsO22rmAvU5tZT2z5Xow/A2uhhxwXuGTxgdReF3zcp7A80gma2onRs1A==}
     peerDependencies:
       '@types/react': ^18.2.25
       react: ^18.0
@@ -14563,7 +14606,7 @@ packages:
       redux:
         optional: true
     dependencies:
-      '@types/react': 18.2.76
+      '@types/react': 18.2.79
       '@types/use-sync-external-store': 0.0.3
       react: 18.2.0
       react-native: 0.73.6(@babel/core@7.24.4)(@babel/preset-env@7.24.4)(react@18.2.0)
@@ -15944,6 +15987,7 @@ packages:
     dependencies:
       browserslist: 4.23.0
       postcss: 8.4.38
+      postcss-picker-wrapper-parser: 6.0.16
       postcss-selector-parser: 6.0.16
     dev: true
 
@@ -16109,16 +16153,16 @@ packages:
       react-dom: '>=16.13.0'
       react-native: '>=0.62.0'
     dependencies:
-      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
+      '@tarojs/components': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
       '@tarojs/plugin-platform-alipay': 3.6.26(@tarojs/components@3.6.26)(@tarojs/taro@3.6.26)
-      '@tarojs/plugin-platform-h5': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)(react@18.2.0)
+      '@tarojs/plugin-platform-h5': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/taro@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)(react@18.2.0)
       '@tarojs/plugin-platform-jd': 3.6.26(@tarojs/taro@3.6.26)
       '@tarojs/plugin-platform-qq': 3.6.26(@tarojs/components@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)
       '@tarojs/plugin-platform-swan': 3.6.26(@tarojs/components@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)
       '@tarojs/plugin-platform-tt': 3.6.26(@tarojs/components@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)
       '@tarojs/plugin-platform-weapp': 3.6.26(@tarojs/components@3.6.26)(@tarojs/shared@3.6.26)(@tarojs/taro@3.6.26)
       '@tarojs/react': 3.6.26(@tarojs/runtime@3.6.26)(@tarojs/shared@3.6.26)(react@18.2.0)
-      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.76)(postcss@8.4.38)
+      '@tarojs/taro': 3.6.26(@tarojs/helper@3.6.26)(@tarojs/runtime@3.6.26)(@types/react@18.2.79)(postcss@8.4.38)
       '@tarojs/taro-rn': 3.6.26(@babel/core@7.24.4)(@babel/preset-env@7.24.4)(@bam.tech/react-native-image-resizer@3.0.7)(@react-native-async-storage/async-storage@1.17.12)(@react-native-camera-roll/camera-roll@5.0.4)(@react-native-clipboard/clipboard@1.11.2)(@react-native-community/geolocation@3.0.6)(@react-native-community/netinfo@9.3.11)(@react-native-community/segmented-control@2.2.2)(@react-native-community/slider@4.3.3)(@react-native-masked-view/masked-view@0.2.9)(@react-native-picker/picker@2.4.10)(@tarojs/shared@3.6.26)(expo-av@13.0.3)(expo-barcode-scanner@12.0.0)(expo-brightness@11.0.1)(expo-camera@13.0.0)(expo-file-system@15.1.1)(expo-image-picker@14.0.3)(expo-keep-awake@11.0.1)(expo-location@15.0.1)(expo-sensors@12.0.1)(expo@47.0.14)(react-native-device-info@10.3.1)(react-native-gesture-handler@2.9.0)(react-native-pager-view@6.0.2)(react-native-safe-area-context@4.4.1)(react-native-screens@3.20.0)(react-native-svg@13.7.0)(react-native-syan-image-picker@0.5.3)(react-native-webview@11.23.1)(react-native@0.73.6)(react@18.2.0)
       classnames: 2.5.1
       dayjs: 1.11.10
