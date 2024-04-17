@@ -18,6 +18,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
         working-directory: ./server
+      - name: Write secrets to `.dev.vars`
+        run: |
+          echo "CF_ACCOUNT_ID=${{ secrets.CF_ACCOUNT_ID }}" > .dev.vars
+          echo "API_KEY=${{ secrets.CF_WORKER_TOKEN }}" > .dev.vars
+        working-directory: ./server
       - name: Generate coverage report
         run: pnpm run coverage
         working-directory: ./server
