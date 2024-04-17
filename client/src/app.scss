@@ -13,12 +13,17 @@
 }
 
 .at-modal__container {
-  width: calc($qr-size + 32px);
-  height: calc($qr-size + 32px);
+  width: calc($qr-size + 100px);
+}
+
+.at-modal__header {
+  font-size: 0.6rem;
 }
 
 .at-modal__content {
-  padding: 16px;
+  display: flex;
+  justify-content: center;
+  padding-block: 32px;
 }
 
 view {

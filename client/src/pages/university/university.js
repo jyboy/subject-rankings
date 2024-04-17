@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { View, Picker, ScrollView, Image } from '@tarojs/components';
 import { useLoad, request, navigateTo, setStorage } from '@tarojs/taro';
-import { AtModal, AtModalContent, AtFab } from 'taro-ui';
+import { AtModal, AtModalHeader, AtModalContent, AtFab } from 'taro-ui';
 import { QRCodeSVG } from 'qrcode.react';
 import bookshelfImg from '../../assets/images/bookshelf.jpeg';
 import categories from '../../data/categories.json';
@@ -201,8 +201,13 @@ const University = () => {
         <View className="credit">{locales.text.credit[language]}</View>
       </ScrollView>
       <AtModal isOpened={qrOpen} onClose={() => setQROpen(false)}>
+        <AtModalHeader>{locales.text.scanQR[language]}</AtModalHeader>
         <AtModalContent>
           <QRCodeSVG
+            alt={locales.labels.qrImg[language]}
+            title={buildPageURL(
+              categories[categoryIdx].subjects[subjectIdx].code
+            )}
             value={buildPageURL(
               categories[categoryIdx].subjects[subjectIdx].code
             )}
