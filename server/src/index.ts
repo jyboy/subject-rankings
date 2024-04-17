@@ -11,7 +11,11 @@ app.notFound((c) => c.json({ err: 'Not found' }, 404))
 app.use(
   '/*',
   cors({
-    origin: ['http://127.0.0.1:10086', 'https://subject-rankings.pages.dev'],
+    origin: [
+      'http://127.0.0.1:10086',
+      'http://127.0.0.1:10010',
+      'https://subject-rankings.pages.dev'
+    ],
     allowMethods: ['GET', 'HEAD'],
     credentials: false,
     maxAge: 432000
