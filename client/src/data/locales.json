@@ -57,23 +57,31 @@
     "subjectResult": {
       "en": "Grade",
       "zh": "评估结果"
+    },
+    "scanQR": {
+      "en": "Scan to View on Phone",
+      "zh": "扫码在手机上查看"
     }
   },
   "labels": {
     "qrCode": {
-      "en": "show QR code",
+      "en": "Show QR code",
       "zh": "显示二维码"
     },
+    "qrImg": {
+      "en": "This page's QR code",
+      "zh": "当前页面二维码"
+    },
     "github": {
-      "en": "open GitHub",
+      "en": "Open GitHub",
       "zh": "跳转 GitHub"
     },
     "language": {
-      "en": "switch language",
+      "en": "Switch language",
       "zh": "切换中英文"
     },
     "back": {
-      "en": "go back",
+      "en": "Go back",
       "zh": "返回上一页"
     },
     "confirm": {

@@ -2,8 +2,6 @@ import { getSystemInfoSync, getStorageSync } from '@tarojs/taro';
 
 // TODO: JSDoc
 export const detectLang = () => {
-  return (
-    getStorageSync('language') ||
-    new Intl.Locale(getSystemInfoSync().language).language
-  );
+  const lang = new Intl.Locale(getSystemInfoSync().language).language;
+  return getStorageSync('language') || (lang === 'zh' ? 'zh' : 'en');
 };
