@@ -99,7 +99,7 @@ const University = () => {
     setQROpen(true);
   };
 
-  const handleLanguageChange = () => {
+  const handleLanguageSwitch = () => {
     setStorage({
       key: 'language',
       data: language === 'en' ? 'zh' : 'en'
@@ -108,12 +108,15 @@ const University = () => {
   };
 
   return (
-    <View className="container">
+    <View className="container" data-testid="university-container">
       <ScrollView className="scroll-view" scrollY="true">
         <View className="header">
           <Image className="header-img" mode="aspectFill" src={bookshelfImg} />
           <View className="header-seam"></View>
-          <View className={'university-title ' + language}>
+          <View
+            className={'university-title ' + language}
+            data-testid="university-title"
+          >
             {locales.text.universityRankings[language]}
           </View>
           {isPC() && (
@@ -149,13 +152,13 @@ const University = () => {
             onColumnChange={handlePickerColumnChange}
             onChange={handlePickerChange}
           >
-            <View className="picker-value">
+            <View className="picker-value" data-testid="selected-subject">
               {categories[categoryIdx].subjects[subjectIdx]['name_' + language]}
             </View>
           </Picker>
           <ArrowRight className="picker-arrow" size="1rem" />
         </View>
-        <View role="list">
+        <View role="list" data-testid="university-list">
           {universities.map((item) => {
             return (
               <View
@@ -218,7 +221,7 @@ const University = () => {
         className="fab"
         role="button"
         aria-label={locales.labels.language[language]}
-        onClick={handleLanguageChange}
+        onClick={handleLanguageSwitch}
       >
         <Locale size="1.4rem" />
       </AtFab>
