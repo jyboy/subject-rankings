@@ -16,7 +16,9 @@ jobs:
         with:
           version: 8
       - name: Install dependencies
-        run: pnpm install
+        run: |
+          npm config set registry http://registry.npmjs.org
+          pnpm install
         working-directory: ./client
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
