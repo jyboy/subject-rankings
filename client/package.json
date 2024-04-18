@@ -54,12 +54,5 @@
     "react-refresh": "^0.14.0",
     "webpack": "5.91.0",
     "wrangler": "^3.51.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "css-minimizer-webpack-plugin": "^5.0.1",
-      "css-loader": "^7.1.1",
-      "vue-loader": "^16.8.3"
-    }
   }
 }
